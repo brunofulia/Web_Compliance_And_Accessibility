@@ -55,6 +55,8 @@ The test suite is structured to showcase both passing (**OK**) and intentionally
 │   ├── heroku-alerts.page.ts # Page object for HerokuApp JavaScript Alerts
 │   └── juice-shop.page.ts   # Page object for OWASP Juice Shop
 └── tests/          # Isolated test specifications (.spec.ts)
+    ├── accessibility.spec.ts # Web accessibility audits (Axe-core) on Juice Shop
+    └── alerts.spec.ts        # JS Alerts & native dialog tests on HerokuApp
 ```
 
 ### Design Principles:
@@ -86,19 +88,29 @@ HEROKU_ALERTS_URL=https://the-internet.herokuapp.com/javascript_alerts
 
 ### 3. Execute Tests
 
-Run the full compliance suite:
+Run all tests:
 ```bash
-npm run test:compliance
+npm run test:all
+```
+
+Run only accessibility audits:
+```bash
+npm run test:accessibility
+```
+
+Run only native alert interaction tests:
+```bash
+npm run test:alerts
 ```
 
 Or run in headed mode:
 ```bash
-npm run test:compliance:headed
+npm run test:headed
 ```
 
 Or open the interactive UI mode:
 ```bash
-npm run test:compliance:ui
+npm run test:ui
 ```
 
 ### 4. View Results

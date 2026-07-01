@@ -4,10 +4,12 @@
   "description": "Playwright TypeScript Page Object Model Automation Framework",
   "main": "index.js",
   "scripts": {
-    "test:compliance": "playwright test",
-    "test:compliance:headed": "playwright test --headed",
-    "test:compliance:ui": "playwright test --ui",
-    "test:compliance:debug": "playwright test --debug",
+    "test:all": "playwright test",
+    "test:accessibility": "playwright test tests/accessibility.spec.ts",
+    "test:alerts": "playwright test tests/alerts.spec.ts",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
     "show:report": "playwright show-report"
   },
   "keywords": [
