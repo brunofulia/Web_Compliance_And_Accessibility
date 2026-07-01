@@ -1,0 +1,76 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Virtual Environments (Python, Conda, etc.)
+venv/
+.venv/
+env/
+ENV/
+.conda/
+conda-env/
+
+# Playwright reports, test results, and coverage
+playwright-report/
+test-results/
+playwright/.local-browsers/
+blob-report/
+coverage/
+.nyc_output/
+
+# Environment files
+.env
+.env.staging
+.env.*
+!.env.example
+
+
+# Temporary cache files and logs
+.cache/
+.eslintcache
+.parcel-cache/
+.sass-cache/
+.next/
+.nuxt/
+tmp/
+temp/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Antigravity IDE & Gemini Meta-configurations / Agents
+.antigravity/
+.agents/
+.gemini/
+
+# AI Coding Assistants & Agent Workspace Metadata (Claude, OpenCode, Cursor, Copilot, etc.)
+.claude/
+.claudecode/
+claude.json
+.opencode/
+.open-code/
+.cursor/
+.copilot/
+.continue/
+.cline/
+.roo/
+.devin/
+.swe-agent/
+
+# IDE and Editor configurations
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swo
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db

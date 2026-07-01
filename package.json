@@ -1,0 +1,31 @@
+{
+  "name": "01-web-compliance-accessibility",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript Page Object Model Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test:compliance": "playwright test",
+    "test:compliance:headed": "playwright test --headed",
+    "test:compliance:ui": "playwright test --ui",
+    "test:compliance:debug": "playwright test --debug",
+    "show:report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "pom",
+    "automation",
+    "testdino",
+    "antigravity"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.3",
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.24",
+    "dotenv": "^16.4.5",
+    "tdpw": "^1.0.18",
+    "typescript": "^5.3.3"
+  }
+}
